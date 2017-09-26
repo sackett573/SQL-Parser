@@ -1,0 +1,5 @@
+SELECT S.rating, Ave (S.age) AS average
+FROM Sailors AS S
+WHERE S.age > 18
+GROUP BY S.rating
+HAVING Count (*) > 1
